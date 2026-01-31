@@ -6,31 +6,36 @@ function SuccessScreen() {
             src: "https://media.giphy.com/media/OP4C9oeeSVIrwgFNAk/giphy.gif",
             alt: "Raccoon",
             left: '20%',
-            top: '20%'
+            top: '20%',
+            animationDelay: '0.5s'
         },
         {
             src: "https://media0.giphy.com/media/rrasLFSTyi4Th1e8Xo/giphy.gif",
             alt: "Happy cat",
             left: '75%',
-            top: '15%'
+            top: '15%',
+            animationDelay: '0.8s'
         },
         {
             src: "https://media.giphy.com/media/h7deZA51Ru9pwzlz0C/giphy.gif",
             alt: "Headbanging cat",
             left: '23%',
-            top: '75%'
+            top: '75%',
+            animationDelay: '1.2s'
         },
         {
             src: "https://media.giphy.com/media/qxQa0C2zs1iUmriUXt/giphy.gif",
             alt: "Chipi chapa",
             left: '75%',
-            top: '65%'
+            top: '65%',
+            animationDelay: '1.7s'
         },
         {
             src: "https://media.tenor.com/zkaB7Dlry8YAAAAm/hug.webp",
             alt: "Cat hug",
             left: '50%',
-            top: '85%'
+            top: '85%',
+            animationDelay: '2.2s'
         }
     ], [])
 
@@ -100,7 +105,8 @@ function SuccessScreen() {
                     draggable={false}
                     style={{
                         left: gif.left,
-                        top: gif.top
+                        top: gif.top,
+                        animationDelay: gif.animationDelay
                     }}
                 />
             ))}
