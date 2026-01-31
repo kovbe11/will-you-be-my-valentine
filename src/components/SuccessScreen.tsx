@@ -1,7 +1,7 @@
 import {useMemo} from 'react'
 
 function SuccessScreen() {
-    const catGifs = useMemo(() => [
+    const cuteGifs = useMemo(() => [
         {
             src: "https://media.giphy.com/media/OP4C9oeeSVIrwgFNAk/giphy.gif",
             alt: "Raccoon",
@@ -91,16 +91,16 @@ function SuccessScreen() {
                 </div>
             </div>
 
-            {catGifs.map((cat, i) => (
+            {cuteGifs.map((gif, i) => (
                 <img
                     key={i}
-                    src={cat.src}
-                    alt={cat.alt}
+                    src={gif.src}
+                    alt={gif.alt}
                     className="celebration-cat-random"
                     draggable={false}
                     style={{
-                        left: cat.left,
-                        top: cat.top
+                        left: gif.left,
+                        top: gif.top
                     }}
                 />
             ))}

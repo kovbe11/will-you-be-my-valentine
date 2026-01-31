@@ -64,6 +64,7 @@ function QuestionScreen({ onYes }: QuestionScreenProps) {
           <button
             className={`no-button ${isNoButtonMoved ? 'escaped' : ''}`}
             onMouseEnter={handleNoHover}
+            onClick={handleNoHover}
             style={isNoButtonMoved ? {
               left: `${noButtonPosition.x}px`,
               top: `${noButtonPosition.y}px`

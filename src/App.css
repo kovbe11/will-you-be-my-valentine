@@ -158,6 +158,8 @@ button {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 8px 20px rgba(107, 76, 122, 0.3);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 .yes-button {
@@ -395,6 +397,11 @@ button {
 }
 
 @media (max-width: 768px) {
+  .content {
+    top: 0;
+    justify-content: center;
+  }
+
   .question-text {
     font-size: 2.5rem;
   }
@@ -416,6 +423,9 @@ button {
 
   .celebration-text {
     font-size: 4rem;
+    background: none;
+    -webkit-text-fill-color: initial;
+    color: #6B4C7A;
   }
 
   .celebration-subtitle {
@@ -423,16 +433,41 @@ button {
   }
 
   .celebration-cat-random {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .celebration-cat-random:nth-child(5) {
+    left: 18% !important;
+    top: 12% !important;
+  }
+
+  .celebration-cat-random:nth-child(6) {
+    left: 75% !important;
+    top: 10% !important;
+  }
+
+  .celebration-cat-random:nth-child(7) {
+    top: 63% !important;
+  }
+
+  .celebration-cat-random:nth-child(9) {
+    left: 47% !important;
+    top: 75% !important;
   }
 
   .celebration-video {
     width: 150px;
+    top: 20%;
   }
 }
 
 @media (max-width: 480px) {
+  .content {
+    top: 0;
+    padding: 10px;
+  }
+
   .question-text {
     font-size: 2rem;
   }
@@ -454,22 +489,32 @@ button {
 
   .celebration-text {
     font-size: 3rem;
+    background: none;
+    -webkit-text-fill-color: initial;
+    color: #6B4C7A;
   }
 
   .celebration-subtitle {
     font-size: 1.2rem;
   }
 
-  .content {
-    padding: 20px;
+  .celebration-cat-random {
+    width: 80px;
+    height: 80px;
   }
 
-  .celebration-cat-random {
-    width: 120px;
-    height: 120px;
+  .celebration-cat-random:nth-child(5) {
+    left: 18% !important;
+    top: 12% !important;
+  }
+
+  .celebration-cat-random:nth-child(6) {
+    left: 75% !important;
+    top: 10% !important;
   }
 
   .celebration-video {
     width: 120px;
+    top: 20%;
   }
 }
