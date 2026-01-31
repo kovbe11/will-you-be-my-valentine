@@ -1,7 +1,7 @@
 {
   "name": "will-you-be-my-valentine",
   "homepage": "https://kovbe11.github.io/will-you-be-my-valentine/",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
