@@ -69,7 +69,7 @@ function SuccessScreen() {
                 autoPlay
                 playsInline
             >
-                <source src="/boogieboogiehedgehog.mp4" type="video/mp4"/>
+                <source src="public/boogieboogiehedgehog.mp4" type="video/mp4"/>
             </video>
 
             <div className="content">
